@@ -1,0 +1,36 @@
+<section>
+    <div>
+      <table>
+        <thead>
+          <th>PRACTICAS</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let practica of datos">
+            <td>
+              {{ practica.nombre }}
+              <button (click)="verpractica(practica)">Ver</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <table *ngIf="!mostrar && selectedProduct"  >
+        <tbody>
+          <tr>
+            <td>{{ selectedProduct.nombre }}</td>
+            <td>{{ selectedProduct.tutor }}</td>
+            <td>{{ selectedProduct.tipo }}</td>
+            <td>{{ selectedProduct.descripcion }}</td>
+            <td>
+              <button (click)="aprobarPractica(selectedProduct)">Aprobar</button>
+              <button (click)="rechazarPractica(selectedProduct)" class="boton-rojo">Rechazar</button>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section>
+
+  

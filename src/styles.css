@@ -1,1 +1,31 @@
+/* src/styles.css */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+/* Ajusta los colores según sea necesario */
+.mat-primary, .mat-accent {
+  background-color:#003366;
+  color: rgb(255, 255, 255);}
+
+  .icon-container {
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde la derecha */
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+    color: #333; /* Cambia el color del ícono según tu diseño */
+  }
+  
+
+
+
+
+
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #003366;
+    border-top: 60px solid white; /* Esto creará una línea blanca de 1 píxel de grosor en la parte superior del cuerpo */
+    background-image: url(/src/assets/images/ola.jpg));
+    
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,178 @@
+/* Estilos para el formulario */
+form {
+  width: 60%; /* Ancho del formulario */
+  margin: auto; /* Centrar horizontalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh; /* Ajusta el espacio desde la parte superior */
+  padding: 20px; /* Añade un poco de espaciado interno al formulario */
+  border: 2px solid #ccc; /* Añade un borde para destacar el formulario */
+  border-radius: 10px; /* Redondea los bordes del formulario */
+}
+
+/* Estilos para los campos de entrada y textarea */
+input[type="text" ],
+textarea {
+  width: 80%; /* Ancho del campo de entrada */
+  padding: 15px; /* Espaciado interno para mejorar la apariencia */
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+  margin-bottom: 20px; /* Espacio entre los campos */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Añade un borde a los campos */
+  border-radius: 5px; /* Redondea los bordes de los campos */
+}
+/*esticos para el select*/
+select {
+  width: 80%; /* Ancho del select */
+  padding: 15px; /* Espaciado interno para mejorar la apariencia */
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho total */
+  margin-bottom: 20px; /* Espacio entre los elementos */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde del select */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: white; /* Color de fondo */
+  /* Otros estilos opcionales, como colores, sombras, etc. */
+}
+  /* Estilos para el botón */
+  .btn {
+    margin-top: 20px; /* Espacio entre el formulario y el botón */
+  }
+  .btn {
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+     #9500ff,
+     #09f,
+     #00ddff
+    );
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+
+  }
+  .btn span{
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+
+  }
+  .btn:hover span{
+    background: none;
+  }
+  .btn:active {
+    transform: scale(0.9);
+  }
+ /* Estilos para el input animado */
+.input-container {
+  position: relative;
+  margin: 50px;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #999;
+  background-color: transparent;
+  outline: none;
+  transition: border-bottom 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-bottom: 2px solid #9500ff; /* Cambia el color al enfocar */
+}
+
+/* Efectos de animación */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #9500ff; /* Mismo color del botón */
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+input[type="text"]:focus ~ .bar:before,
+input[type="text"]:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input[type="text"]:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #9500ff; /* Mismo color del botón */
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+/* Estilos para el select */
+select {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #999;
+  background-color: transparent;
+  outline: none;
+  transition: border-bottom 0.3s ease;
+}
+
+select:focus {
+  border-bottom: 2px solid #9500ff; /* Cambia el color al enfocar */
+}
+
+/* Estilos para el textarea */
+textarea {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+  border: 2px solid #999;
+  border-radius: 8px;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #9500ff; /* Cambia el color al enfocar */
+}

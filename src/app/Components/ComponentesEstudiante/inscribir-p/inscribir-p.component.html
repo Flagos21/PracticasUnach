@@ -1,0 +1,36 @@
+
+
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <h1>INSCRIBIR PRACTICA</h1>
+    <div class="mb-3">
+        <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre Empresa">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" formControlName="tutor" placeholder="Tutor Responsable">
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" formControlName="cargo" placeholder="Cargo">
+    </div>
+    <div class="mb-3">
+        
+      <label for="estado">Tipo De Practica</label>
+      <select class="form-select" id="estado" name="estado" formControlName="tipo">
+          <option value="Inicial">Inicial</option>
+          <option value="Intermedia">Intermedia</option>
+          <option value="Final">Final</option>
+          <!-- Agrega más opciones si es necesario -->
+      </select>
+  </div>
+    <div class="mb-3">
+      <textarea class="form-control" cols="30" rows="10" formControlName="descripcion" placeholder="Descripcion Actividades"></textarea>
+  </div>
+   <button class="btn btn-info">   <span> ENVIAR</span></button>
+  </form>
+
+  <div class="input-container">
+    <input type="text" id="animated-input" placeholder="Escribe aquí">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+  </div>
+
+  

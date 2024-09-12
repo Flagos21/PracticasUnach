@@ -1,0 +1,131 @@
+
+
+
+/* Estilo para centrar verticalmente la sección */
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  
+   /* Toma el 100% de la altura de la ventana (viewport height) */
+
+  max-width: 100%;
+  height: 100%; /* Toma el 100% de la altura de la ventana (viewport height) */
+
+}
+
+/* Estilos para el logotipo */
+.logo-container {
+  width: 250px; /* Tamaño del logotipo */
+  height: 200px; /* Tamaño del logotipo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto; /* Centra horizontalmente y agrega margen arriba y abajo */
+}
+
+.login-logo-unach {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Cambio: Usa "contain" para que la imagen encaje dentro del contenedor sin recortarla */
+  border-radius: 25%; /* Cambio: Hacer el logotipo más redondo */
+}
+
+.iniciar-sesion {
+  color: #3C97FE;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Cambio: Aumenta el espacio superior en dispositivos más pequeños */
+}
+
+/* Estilos para los campos de correo y contraseña */
+.bloque-texto,
+.bloque-contrasena {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 0 20px; /* Cambio: Agrega espaciado a los lados para dispositivos más pequeños */
+}
+
+.usuario-input,
+.contrasena-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Cambio: Reduce el margen inferior para un mejor espacio entre campos en dispositivos pequeños */
+}
+
+/* Mover "Olvidaste tu contraseña?" al lado derecho */
+.texto-olvidar {
+  float: right; /* Mover al lado derecho */
+  font-size: 14px;
+  color: #3C97FE;
+  text-align: center; /* Centra el texto en todos los dispositivos */
+  margin: auto 5px;
+}
+
+/* Estilos para el checkbox */
+.recuerdame-label {
+  display: flex;
+  align-items: center;
+  margin: auto 10px;
+  cursor: pointer;
+}
+
+.recuerdame-checkbox {
+  margin-right: 10px;
+  transform: scale(1.2); 
+  margin: auto 10px;
+}
+
+
+/* Hacer el botón de ingresar más pequeño y centrado */
+.entrar-button {
+  display: flex;
+  justify-content: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px; /* Ajusta el espaciado interno */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  width: 50%; /* Cambio: El botón ahora ocupa todo el ancho disponible */
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-top: 10px; /* Agrega espacio superior */
+}
+
+.texto-problemas {
+  text-align: center; /* Cambio: Centra el texto en todos los dispositivos */
+  margin: 0 auto;
+  margin-top: 10px; /* Cambio: Aumenta el espacio superior en dispositivos más pequeños */
+}
+
+/* Centrar el correo electrónico de ayuda */
+.correo-ayuda {
+  color: #3C97FE;
+  display: flex;
+  justify-content: center; /* Centra el texto */
+  margin-top: 5px;
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+  .bloque-texto,
+  .bloque-contrasena {
+      max-width: 100%;
+  }
+
+  .usuario-input,
+  .contrasena-input {
+      margin-bottom: 10px; /* Cambio: Reduce el margen inferior para un mejor espacio entre campos en dispositivos pequeños */
+  }
+}

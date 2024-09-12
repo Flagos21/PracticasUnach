@@ -1,0 +1,52 @@
+<body>
+    <section>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form [formGroup]="formReg" (ngSubmit)="onSubmitRegister()">
+            <h1>Crear usuario</h1>
+            <span>Ingresa nombre, correo y contraseña del usuario</span>
+            <label>
+              <input type="text" placeholder="Name" formControlName="nombre" />
+            </label>
+            <label>
+              <input type="email" placeholder="Email" formControlName="email" />
+            </label>
+            <label>
+              <input type="password" placeholder="Password" formControlName="password" />
+            </label>
+            <button style="margin-top: 9px">Registrarse</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form [formGroup]="formLogin" (ngSubmit)="onSubmitLogin()">
+            <h1>Iniciar sesion</h1>
+            <span> Usa correo y contraseña</span>
+            <label>
+              <input type="email" placeholder="Email" formControlName="email" />
+            </label>
+            <label>
+              <input type="password" placeholder="Password" formControlName="password" />
+            </label>
+            
+            <button>Iniciar Sesion</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Bienvenido!</h1>
+              <p>Ingresa con tus datos personales para poder acceder a las funciones</p>
+              <button class="ghost mt-5" id="signIn">Iniciar Sesion</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <h1>Bienvenido!
+              </h1>
+              <p>Registra un usuario con sus datos para que tenga acceso al las funciones</p>
+              <button class="ghost" id="signUp">Registrar Usuario</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </body>
+  

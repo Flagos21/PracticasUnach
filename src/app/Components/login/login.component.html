@@ -1,0 +1,30 @@
+<section class="section">
+    <div>
+        <div class="bloque-texto">
+            <div class="logo-container">
+                <img src="assets/images/LogoUnach.png" alt="Logo de la UNACH" class="login-logo-unach">
+            </div>
+            <h1 class="iniciar-sesion">Iniciar Sesión</h1>
+            <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+                <div>
+                    <input placeholder="Ingresa tu correo electronico" class="usuario-input" type="email" id="email" formControlName="email">
+                </div>
+                <div>
+                    <input type="password" placeholder="Ingresa tu contraseña" class="contrasena-input" id="password" formControlName="password">     
+                </div>
+                    <input type="checkbox" class="recuerdame-checkbox">
+                    <span class="recuerdame-text">Recuérdame</span>
+                        <a class="texto-olvidar" href="mailto:fabianpavez@alu.unach.cl">¿Olvidaste tu contraseña?</a>
+                <div>
+                    <input class="entrar-button" type="submit" value="Enviar">
+                    </div>
+            </form>
+            <div>
+                <p class="texto-problemas">¿Necesitas una cuenta? Envia un correo a</p>
+                <a class="correo-ayuda" href="mailto:fabianpavez@alu.unach.cl">fabianpavez@alu.unach.cl</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+

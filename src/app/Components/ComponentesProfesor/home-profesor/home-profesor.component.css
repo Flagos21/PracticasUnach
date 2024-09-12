@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Estilo para los contenedores de botones */
+  .button-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilo para los botones azules */
+  .blue-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para los botones cuando se les pasa el ratón por encima */
+  .blue-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo para el texto de descripción */
+  .button-description {
+    color: #000000;
+  }
+  
+  /* Estilo para el contenedor de botones */
+.button-container {
+    position: relative;
+  }
+  
+  /* Estilo para el fondo de color */
+  .background-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3C97FE; /* Color de fondo deseado */
+    opacity: 0.5; /* Ajusta la opacidad según tu preferencia */
+    border-radius: 10px; /* Borde redondeado si es necesario */
+    z-index: -1; /* Coloca el fondo detrás de los botones y el texto */
+  }
